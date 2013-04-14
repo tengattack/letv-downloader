@@ -5,7 +5,7 @@
 
 // ==UserScript==
 // @name        letv-downloader
-// @version     0.2
+// @version     0.3
 // @namespace   http://tengattack.com/
 // @description Download letv videos ~ by 腾袭 (tengattack)
 // @include     http://www.letv.com/*
@@ -65,7 +65,8 @@ $('document').ready(function() {
           if (queryStringIndex === -1) {
             realurl = resp.location;
           } else {
-            realurl = resp.location.substr(0, queryStringIndex);
+            //realurl = resp.location.substr(0, queryStringIndex);
+            realurl = resp.location.replace("&tag=ios", "").replace("&m3u8=ios", "");
           }
         }
 
