@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "letv-downloader",
+  "default_locale": "zh",
+  "version": "0.2",
+  "description": "__MSG_description__",
+  "permissions": [
+    "tabs",
+    "downloads",
+    "storage",
+    "contextMenus",
+    "http://www.letv.com/",
+    "http://app.m.letv.com/",
+    "http://*.letv.cn/",
+    "http://*.letv.com/"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "content_scripts":[
+    {
+      "matches": ["http://www.letv.com/*"],
+      "js": ["jquery-1.9.1.min.js", "letv-downloader.js"],
+      "css": ["letv-downloader.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "offline_enabled": false,
+  "homepage_url": "http://tengattack.com/"
+}
