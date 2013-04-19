@@ -5,7 +5,7 @@
 
 // ==UserScript==
 // @name        letv-downloader
-// @version     0.3
+// @version     0.31
 // @namespace   http://tengattack.com/
 // @description Download letv videos ~ by 腾袭 (tengattack)
 // @include     http://www.letv.com/*
@@ -52,7 +52,7 @@ $('document').ready(function() {
 
   // for user scripts
   function letv_download_add_style() {
-    insertStyle(".H-seat{width:400px !important;}.seat-list .Li04{position:relative;z-index:2;}.seat-list .m-d{width:115px;position:absolute;left:-15px;top:42px;}.seat-list .m-d ul{padding:0;}.seat-list .m-d li{border:1px solid #bebebe;border-top:none;height:36px;line-height:36px;float:left;width:113px;}.seat-list .m-d li a{display:block;padding:0 20px;width:73px;background:url(http://i1.letvimg.com/img/201303/19/1658/head-ico.png) no-repeat -10000px -10000px;}.download .m-d{left:2px;}.download .Li04 .frecy i{background-position:-297px -10px;}.download .Li04 .frecy a{background-position:-44px -399px;color:#fff;}.download .Li04 .frecy .sl{background-position:-28px -399px;}.download .Li04 .frecy .sr{background-position:-156px -399px;}.download .Li04 .sr{display:block;}.Li04 .sr,.active .Li04 .sl{display:none;}.seat-list .m-d li a:hover{color:#fff;background-position:left -315px;}");
+    insertStyle(".H-seat{width:auto !important;}.seat-list .Li04{position:relative;z-index:2;}.seat-list .m-d{width:115px;position:absolute;left:-15px;top:42px;}.seat-list .m-d ul{padding:0;}.seat-list .m-d li{border:1px solid #bebebe;border-top:none;height:36px;line-height:36px;float:left;width:113px;}.seat-list .m-d li a{display:block;padding:0 20px;width:73px;background:url(http://i1.letvimg.com/img/201303/19/1658/head-ico.png) no-repeat -10000px -10000px;}.download .m-d{left:2px;}.download .Li04 .frecy i{background-position:-297px -10px;}.download .Li04 .frecy a{background-position:-44px -399px;color:#fff;}.download .Li04 .frecy .sl{background-position:-28px -399px;}.download .Li04 .frecy .sr{background-position:-156px -399px;}.download .Li04 .sr{display:block;}.Li04 .sr,.active .Li04 .sl{display:none;}.seat-list .m-d li a:hover{color:#fff;background-position:left -315px;}");
   }
 
   function letv_download_url(url, videop) {
