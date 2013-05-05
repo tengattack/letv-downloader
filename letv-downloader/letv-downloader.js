@@ -28,7 +28,10 @@ $('document').ready(function() {
             realurl = resp.location;
           } else {
             //realurl = resp.location.substr(0, queryStringIndex);
-            realurl = resp.location.replace("&tag=ios", "").replace("&m3u8=ios", "");
+            realurl = resp.location.replace("&tag=ios", "")
+                              .replace("&tss=ios", "")
+                              .replace("&m3u8=ios", "")
+                              .replace("&realext=.m3u8", "");
           }
         }
 
